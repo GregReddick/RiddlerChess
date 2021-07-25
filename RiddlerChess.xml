@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RiddlerChess</name>
+    </assembly>
+    <members>
+        <member name="T:Extensions">
+            <summary>An extensions.</summary>
+        </member>
+        <member name="M:Extensions.Clone``1(System.Collections.Generic.IList{``0})">
+            <summary>An IList&lt;T&gt; extension method that makes a deep copy of this object.</summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="listToClone">The listToClone to act on.</param>
+            <returns>A copy of this object.</returns>
+        </member>
+        <member name="T:RiddlerChess.Program">
+            <summary>A program.</summary>
+        </member>
+        <member name="T:RiddlerChess.Program.ChessPiece">
+            <summary>Values that represent chess pieces.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Visited">
+            <summary>An enum constant representing the visited option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Black">
+            <summary>An enum constant representing the black option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Pawn">
+            <summary>An enum constant representing the pawn option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Knight">
+            <summary>An enum constant representing the knight option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Bishop">
+            <summary>An enum constant representing the bishop option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Rook">
+            <summary>An enum constant representing the rook option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.Queen">
+            <summary>An enum constant representing the queen option.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.ChessPiece.King">
+            <summary>An enum constant representing the king option.</summary>
+        </member>
+        <member name="M:RiddlerChess.Program.Main">
+            <summary>Main entry-point for this application.</summary>
+        </member>
+        <member name="M:RiddlerChess.Program.Move(RiddlerChess.Program.ChessPiece[0:,0:],RiddlerChess.Program.Location,System.Collections.Generic.IList{RiddlerChess.Program.Location})">
+            <summary>Moves.</summary>
+            <param name="board">The board.</param>
+            <param name="location">The location.</param>
+            <param name="moves">The moves.</param>
+            <returns>True if it succeeds, false if it fails.</returns>
+        </member>
+        <member name="T:RiddlerChess.Program.Location">
+            <summary>A location.</summary>
+            <seealso cref="T:System.ICloneable"/>
+        </member>
+        <member name="F:RiddlerChess.Program.Location.file">
+            <summary>The file.</summary>
+        </member>
+        <member name="F:RiddlerChess.Program.Location.rank">
+            <summary>The rank.</summary>
+        </member>
+        <member name="M:RiddlerChess.Program.Location.#ctor(System.Int32,System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:RiddlerChess.Program.Location"/> class.</summary>
+            <param name="rank">The rank.</param>
+            <param name="file">The file.</param>
+        </member>
+        <member name="P:RiddlerChess.Program.Location.Rank">
+            <summary>Gets the rank.</summary>
+            <value>The rank.</value>
+        </member>
+        <member name="P:RiddlerChess.Program.Location.File">
+            <summary>Gets the file.</summary>
+            <value>The file.</value>
+        </member>
+        <member name="M:RiddlerChess.Program.Location.ToString">
+            <summary>Returns a string that represents the current object.</summary>
+            <returns>A string that represents the current object.</returns>
+            <seealso cref="M:System.Object.ToString()"/>
+        </member>
+        <member name="M:RiddlerChess.Program.Location.Clone">
+            <summary>Creates a new object that is a copy of the current instance.</summary>
+            <returns>A new object that is a copy of this instance.</returns>
+            <seealso cref="M:System.ICloneable.Clone()"/>
+        </member>
+    </members>
+</doc>
